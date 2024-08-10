@@ -1,0 +1,36 @@
+section{
+  text-align: center;
+  color: #2C3E50;
+  overflow: hidden;
+}
+.icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #2C3E50;
+}
+.line{
+  height: 4px;
+  width: 80px;
+  background-color: #2C3E50;
+}
+.form-control:focus {
+  box-shadow:none;
+}
+.submit-btn{
+  background-color: #1ABC9C;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  width: 30%;
+  text-align: center;
+  cursor: pointer;
+}
+label{
+  color: #1ABC9C;
+  font-size: small;
+  padding-left: 10px;
+  transition: all 0.3s linear;
+}
+

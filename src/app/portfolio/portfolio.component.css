@@ -1,0 +1,48 @@
+section{
+  text-align: center;
+  /* height: 70vh; */
+  color: #2C3E50;
+  overflow: hidden;
+}
+.icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #2C3E50;
+}
+.line{
+  height: 4px;
+  width: 80px;
+  background-color: #2C3E50;
+}
+/* .inner:hover .gallary-hover{
+  background-color: #1abc9ce6;
+  opacity: 1;
+  cursor: pointer;
+  transition: .6s opacity;
+} */
+ .inner{
+  position: relative;
+  cursor: pointer;
+ }
+ .inner > * {
+  pointer-events: none; /* Disable pointer events on child elements */
+}
+ .gallary-img{
+  overflow: hidden;
+ }
+.gallary-hover{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: .6s opacity;
+  background-color: #1abc9ce6;
+  border-radius: 8px;
+}
+.inner:hover .gallary-hover{
+  opacity: 1;
+}

@@ -1,0 +1,29 @@
+#navbarNav{
+  justify-content: flex-end;
+}
+.active{
+  background-color: #1ABC9C;
+  color: white;
+  border-radius: 10px;
+}
+.navbar-brand{
+
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+.navbar{
+  background-color: #2C3E50;
+  --bs-navbar-brand-padding-y:0px;
+
+}
+.navbar-nav{
+  --bs-nav-link-color: white;
+  font-weight: 700;
+}
+.nav-link.active{
+  color: white;
+}
+.nav-link:focus,.nav-link:hover {
+  color: white;
+}

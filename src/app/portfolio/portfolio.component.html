@@ -1,0 +1,63 @@
+<section class="container">
+  <h2 class="text-center my-3">PORTFOLIO COMPONENT</h2>
+  <div class="icon m-3">
+    <div class="line"></div>
+    <i class="fa-solid fa-star mx-3"></i>
+    <div class="line"></div>
+  </div>
+
+  <div class="gallary mb-4">
+    <div class="row g-5">
+      <div class="col-md-4 gallary-img position-relative">
+        <div (click)="displayImg($event)" class="inner">
+          <div  class="gallary-hover">
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+          <img  src="./assets/images/poert1.png" class="w-100 rounded-3" alt="poert1">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div (click)="displayImg($event)" class="inner">
+          <div class="gallary-hover"><i class="text-white fa-solid fa-plus fa-6x"></i></div>
+          <img src="./assets/images/port2.png"  class="w-100 rounded-3" alt="poert1">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div (click)="displayImg($event)" class="inner">
+          <div class="gallary-hover"><i class="text-white fa-solid fa-plus fa-6x"></i></div>
+          <img src="./assets/images/port3.png"  class="w-100 rounded-3" alt="poert1">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div (click)="displayImg($event)"  class="inner">
+          <div class="gallary-hover"><i class="text-white fa-solid fa-plus fa-6x"></i></div>
+          <img src="./assets/images/poert1.png" class="w-100 rounded-3" alt="poert1">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div (click)="displayImg($event)" class="inner">
+          <div class="gallary-hover"><i class="text-white fa-solid fa-plus fa-6x"></i></div>
+          <img src="./assets/images/port2.png"  class="w-100 rounded-3" alt="poert1">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div (click)="displayImg($event)" class="inner">
+          <div  class="gallary-hover"><i class="text-white fa-solid fa-plus fa-6x"></i></div>
+          <img src="./assets/images/port3.png"  class="w-100 rounded-3" alt="poert1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div (click)="clicked = false" [ngClass]="{'d-block': clicked, 'd-none': !clicked}"
+    class="d-none position-fixed start-0 w-100 top-0 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center">
+    <div (click)="$event.stopPropagation()">
+      <img class="w-50" [src]='data'>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+section{
+  background-color: #1ABC9C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  color: white;
+}
+.icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.line{
+  height: 4px;
+  width: 80px;
+  background-color: white;
+}
+h2{
+  font-size: 40px;
+  font-weight: 700;
+}
+p{
+  font-size: 14px;
+  font-weight: 500;
+}

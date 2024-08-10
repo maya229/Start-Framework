@@ -1,0 +1,47 @@
+<section>
+  <h2 class="text-center my-3">CONTACT COMPONENT</h2>
+  <div class="icon m-3">
+    <div class="line"></div>
+    <i class="fa-solid fa-star mx-3"></i>
+    <div class="line"></div>
+  </div>
+  <div class="container">
+    <form class="w-50 p-3 mx-auto mt-5 ng-untouched ng-pristine ng-valid">
+      <div class="mb-3">
+        @if(userNameClicked){
+        <div class="text-start">
+          <label for="userName">{{labelName}}</label>
+        </div>
+        }
+        <input [(ngModel)]="userName" name="userName" (input)="onInput($event)"  id="userName" type="text" placeholder="userName" class="w-100 form-control border-0 border-bottom py-3 ">
+      </div>
+      <div class="mb-3">
+        @if(userAgeClicked){
+          <div class="text-start">
+            <label for="userAge">{{labelAge}}</label>
+          </div>
+          }
+        <input [(ngModel)]="userAge" name="userAge" (input)="onInput($event)" id="userAge" type="text" placeholder="userAge" class="w-100 form-control border-0 border-bottom py-3 ">
+      </div>
+      <div class="mb-3">
+        @if(userEmailClicked){
+          <div class="text-start">
+            <label for="userEmail">{{labelEmail}}</label>
+          </div>
+          }
+        <input [(ngModel)]="userEmail" name="userEmail" (input)="onInput($event)"  id="userEmail" type="email" placeholder="userEmail" class="w-100 form-control border-0 border-bottom py-3 ">
+      </div>
+      <div>
+        @if(userPasswordClicked){
+          <div class="text-start">
+            <label for="userPassword">{{labelPassword}}</label>
+          </div>
+          }
+        <input [(ngModel)]="userPassword" name="userPassword" (input)="onInput($event)"  id="userPassword" type="text" placeholder="userPassword" class="w-100 form-control border-0 border-bottom py-3 ">
+      </div>
+      <div class="text-start mb-3">
+        <div class=" mt-4 text-white submit-btn "> send Message </div>
+      </div>
+    </form>
+  </div>
+</section>
